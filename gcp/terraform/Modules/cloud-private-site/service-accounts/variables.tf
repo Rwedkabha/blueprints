@@ -53,6 +53,12 @@ variable "deployer_permissions" {
     "alloydb.instances.list",
     "alloydb.operations.get",
     "alloydb.operations.list",
+    "alloydb.users.create",
+    "alloydb.users.delete",
+    "alloydb.users.get",
+    "alloydb.users.list",
+    "alloydb.users.login",
+    "alloydb.users.update",
 
     # Permissions from roles/cloudsql.admin
     "cloudsql.backupRuns.create",

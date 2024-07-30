@@ -218,9 +218,10 @@ module "k2v_agent" {
   region                   = var.region
   cloud_provider           = "GCP"
   namespace                = var.k2view_agent_namespace
-  gcp_service_account_name = "${var.cluster_name}-deployer-sa"
+  project                  = var.project_id
   project_id               = var.project_id
   network_name             = module.vpc.network_name
+  gcp_service_account_name = "${var.cluster_name}-deployer-sa"
 }
 
 ### Grafana Agent ###
